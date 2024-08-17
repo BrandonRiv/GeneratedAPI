@@ -1,0 +1,176 @@
+\doxysection{overlay.\+Icon\+Overlay Class Reference}
+\hypertarget{classoverlay_1_1_icon_overlay}{}\label{classoverlay_1_1_icon_overlay}\index{overlay.IconOverlay@{overlay.IconOverlay}}
+Inheritance diagram for overlay.\+Icon\+Overlay\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classoverlay_1_1_icon_overlay}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_a28b160ee73521697aba72de91d06b482}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_a8c33a7367963979758ba0216c28fd5c7}{load\+\_\+overlay\+\_\+settings}} (self)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_ad73270a59aae08620ba90821c7fb014d}{load\+\_\+hotkeys}} (self)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_a69fc2467f862b7d814dc8825c10eb22b}{cache\+\_\+icon\+\_\+paths}} (self)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_a589f303aa4b6f3c23cc0fff8181b3a43}{setup\+\_\+overlay}} (self)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_a0ea6374dc40f54e48bf38a59b14ac7cc}{setup\+\_\+key\+\_\+combos}} (self)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_ab7b948d6417c7d29f1812b87d9baf987}{apply\+\_\+current\+\_\+state}} (self)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_af5e4dd661ecb55a102273bbf69c5d241}{overlay\+\_\+location}} (self)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_a41ce522fa0b0e5256943148996356950}{create\+\_\+icons}} (self, icon\+\_\+name, x, y)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_ae648bccfb0af08757a7db25d01e53fc0}{check\+\_\+hotkey}} (self, hotkey)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_a7bbc0a30f3e595075302ba0f173a22a0}{reset\+\_\+last\+\_\+combo}} (self, event)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_ab20b44878f83a235f1c1a0b35ed29d11}{toggle\+\_\+icon}} (self, icon\+\_\+name)
+\item 
+\mbox{\hyperlink{classoverlay_1_1_icon_overlay_a529b44b98e94dfd0c630bc55a3eae7ae}{update\+\_\+hotkeys}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classoverlay_1_1_icon_overlay_af1911489a44ace262b315ea7f469ade8}\label{classoverlay_1_1_icon_overlay_af1911489a44ace262b315ea7f469ade8} 
+dict {\bfseries settings} = json.\+load(f)
+\item 
+\Hypertarget{classoverlay_1_1_icon_overlay_af28b03690bfb400a9c1ada7c63f81f58}\label{classoverlay_1_1_icon_overlay_af28b03690bfb400a9c1ada7c63f81f58} 
+dict {\bfseries hotkeys} = \{k\+: v\mbox{[}\+:-\/1\mbox{]} for k, v in hotkeys\+\_\+data.\+items()\}
+\item 
+\Hypertarget{classoverlay_1_1_icon_overlay_a788a1663b09638e147d5ec4b6d267309}\label{classoverlay_1_1_icon_overlay_a788a1663b09638e147d5ec4b6d267309} 
+dict {\bfseries icon\+\_\+states} = \{k\+: v\mbox{[}-\/1\mbox{]} for k, v in hotkeys\+\_\+data.\+items()\}
+\item 
+\Hypertarget{classoverlay_1_1_icon_overlay_abd32ee6f94a5572af5866881ffebb365}\label{classoverlay_1_1_icon_overlay_abd32ee6f94a5572af5866881ffebb365} 
+dict {\bfseries icon\+\_\+paths} = \{\}
+\item 
+\Hypertarget{classoverlay_1_1_icon_overlay_aaffe92018ae0d4d766c59e036c42b80b}\label{classoverlay_1_1_icon_overlay_aaffe92018ae0d4d766c59e036c42b80b} 
+dict {\bfseries icons} = \{\}
+\item 
+\Hypertarget{classoverlay_1_1_icon_overlay_a4c40b421f7f26e9f8b58b01e8e35b394}\label{classoverlay_1_1_icon_overlay_a4c40b421f7f26e9f8b58b01e8e35b394} 
+{\bfseries master\+\_\+mute\+\_\+icon} = None
+\item 
+\Hypertarget{classoverlay_1_1_icon_overlay_ad1588f15a91ce51c9a5cfe29d4f910a9}\label{classoverlay_1_1_icon_overlay_ad1588f15a91ce51c9a5cfe29d4f910a9} 
+str {\bfseries master\+\_\+mute\+\_\+icon} = "{}System Mute"{}\+:
+\item 
+\Hypertarget{classoverlay_1_1_icon_overlay_ab1ec661fdfba80588640d0f3056d8d38}\label{classoverlay_1_1_icon_overlay_ab1ec661fdfba80588640d0f3056d8d38} 
+{\bfseries last\+\_\+combo} = None
+\item 
+\Hypertarget{classoverlay_1_1_icon_overlay_ae5b1b508872c6afd3209811fc47222f3}\label{classoverlay_1_1_icon_overlay_ae5b1b508872c6afd3209811fc47222f3} 
+{\bfseries check\+\_\+hotkey}
+\item 
+\Hypertarget{classoverlay_1_1_icon_overlay_aed4463a9f71ab52928b6bb7f7f79edb5}\label{classoverlay_1_1_icon_overlay_aed4463a9f71ab52928b6bb7f7f79edb5} 
+{\bfseries reset\+\_\+last\+\_\+combo} = (hotkey,))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Manage the icon overlay.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classoverlay_1_1_icon_overlay_a28b160ee73521697aba72de91d06b482}\index{overlay.IconOverlay@{overlay.IconOverlay}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_a28b160ee73521697aba72de91d06b482} 
+overlay.\+Icon\+Overlay.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize the IconOverlay widget.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classoverlay_1_1_icon_overlay_ab7b948d6417c7d29f1812b87d9baf987}\index{overlay.IconOverlay@{overlay.IconOverlay}!apply\_current\_state@{apply\_current\_state}}
+\index{apply\_current\_state@{apply\_current\_state}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{apply\_current\_state()}{apply\_current\_state()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_ab7b948d6417c7d29f1812b87d9baf987} 
+overlay.\+Icon\+Overlay.\+apply\+\_\+current\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply current mute states to icons.\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_a69fc2467f862b7d814dc8825c10eb22b}\index{overlay.IconOverlay@{overlay.IconOverlay}!cache\_icon\_paths@{cache\_icon\_paths}}
+\index{cache\_icon\_paths@{cache\_icon\_paths}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{cache\_icon\_paths()}{cache\_icon\_paths()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_a69fc2467f862b7d814dc8825c10eb22b} 
+overlay.\+Icon\+Overlay.\+cache\+\_\+icon\+\_\+paths (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Cache the file paths for all icon images.\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_ae648bccfb0af08757a7db25d01e53fc0}\index{overlay.IconOverlay@{overlay.IconOverlay}!check\_hotkey@{check\_hotkey}}
+\index{check\_hotkey@{check\_hotkey}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{check\_hotkey()}{check\_hotkey()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_ae648bccfb0af08757a7db25d01e53fc0} 
+overlay.\+Icon\+Overlay.\+check\+\_\+hotkey (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{hotkey}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if current key combo matches a hotkey\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_a41ce522fa0b0e5256943148996356950}\index{overlay.IconOverlay@{overlay.IconOverlay}!create\_icons@{create\_icons}}
+\index{create\_icons@{create\_icons}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{create\_icons()}{create\_icons()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_a41ce522fa0b0e5256943148996356950} 
+overlay.\+Icon\+Overlay.\+create\+\_\+icons (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{icon\+\_\+name}{, }\item[{}]{x}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and set properties for overlay icons.\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_ad73270a59aae08620ba90821c7fb014d}\index{overlay.IconOverlay@{overlay.IconOverlay}!load\_hotkeys@{load\_hotkeys}}
+\index{load\_hotkeys@{load\_hotkeys}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{load\_hotkeys()}{load\_hotkeys()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_ad73270a59aae08620ba90821c7fb014d} 
+overlay.\+Icon\+Overlay.\+load\+\_\+hotkeys (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load hotkeys from hotkeys.json or initialize System Mute hotkey.\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_a8c33a7367963979758ba0216c28fd5c7}\index{overlay.IconOverlay@{overlay.IconOverlay}!load\_overlay\_settings@{load\_overlay\_settings}}
+\index{load\_overlay\_settings@{load\_overlay\_settings}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{load\_overlay\_settings()}{load\_overlay\_settings()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_a8c33a7367963979758ba0216c28fd5c7} 
+overlay.\+Icon\+Overlay.\+load\+\_\+overlay\+\_\+settings (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load overlay settings from overlay_settings.json.\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_af5e4dd661ecb55a102273bbf69c5d241}\index{overlay.IconOverlay@{overlay.IconOverlay}!overlay\_location@{overlay\_location}}
+\index{overlay\_location@{overlay\_location}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{overlay\_location()}{overlay\_location()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_af5e4dd661ecb55a102273bbf69c5d241} 
+overlay.\+Icon\+Overlay.\+overlay\+\_\+location (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the overlay location and icon orientation.\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_a7bbc0a30f3e595075302ba0f173a22a0}\index{overlay.IconOverlay@{overlay.IconOverlay}!reset\_last\_combo@{reset\_last\_combo}}
+\index{reset\_last\_combo@{reset\_last\_combo}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{reset\_last\_combo()}{reset\_last\_combo()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_a7bbc0a30f3e595075302ba0f173a22a0} 
+overlay.\+Icon\+Overlay.\+reset\+\_\+last\+\_\+combo (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{event}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset the last key combo.\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_a0ea6374dc40f54e48bf38a59b14ac7cc}\index{overlay.IconOverlay@{overlay.IconOverlay}!setup\_key\_combos@{setup\_key\_combos}}
+\index{setup\_key\_combos@{setup\_key\_combos}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{setup\_key\_combos()}{setup\_key\_combos()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_a0ea6374dc40f54e48bf38a59b14ac7cc} 
+overlay.\+Icon\+Overlay.\+setup\+\_\+key\+\_\+combos (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Manage current key combos.\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_a589f303aa4b6f3c23cc0fff8181b3a43}\index{overlay.IconOverlay@{overlay.IconOverlay}!setup\_overlay@{setup\_overlay}}
+\index{setup\_overlay@{setup\_overlay}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{setup\_overlay()}{setup\_overlay()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_a589f303aa4b6f3c23cc0fff8181b3a43} 
+overlay.\+Icon\+Overlay.\+setup\+\_\+overlay (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set up the overlay according to overlay_settings.json.\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_ab20b44878f83a235f1c1a0b35ed29d11}\index{overlay.IconOverlay@{overlay.IconOverlay}!toggle\_icon@{toggle\_icon}}
+\index{toggle\_icon@{toggle\_icon}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{toggle\_icon()}{toggle\_icon()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_ab20b44878f83a235f1c1a0b35ed29d11} 
+overlay.\+Icon\+Overlay.\+toggle\+\_\+icon (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{icon\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Toggle an icon's visibility.\end{DoxyVerb}
+ \Hypertarget{classoverlay_1_1_icon_overlay_a529b44b98e94dfd0c630bc55a3eae7ae}\index{overlay.IconOverlay@{overlay.IconOverlay}!update\_hotkeys@{update\_hotkeys}}
+\index{update\_hotkeys@{update\_hotkeys}!overlay.IconOverlay@{overlay.IconOverlay}}
+\doxysubsubsection{\texorpdfstring{update\_hotkeys()}{update\_hotkeys()}}
+{\footnotesize\ttfamily \label{classoverlay_1_1_icon_overlay_a529b44b98e94dfd0c630bc55a3eae7ae} 
+overlay.\+Icon\+Overlay.\+update\+\_\+hotkeys (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update hotkeys.json with updated hotkey data.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+overlay.\+py\end{DoxyCompactItemize}

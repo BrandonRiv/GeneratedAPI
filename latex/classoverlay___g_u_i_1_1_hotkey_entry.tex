@@ -1,0 +1,134 @@
+\doxysection{overlay\+\_\+\+GUI.\+Hotkey\+Entry Class Reference}
+\hypertarget{classoverlay___g_u_i_1_1_hotkey_entry}{}\label{classoverlay___g_u_i_1_1_hotkey_entry}\index{overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}}
+Inheritance diagram for overlay\+\_\+\+GUI.\+Hotkey\+Entry\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classoverlay___g_u_i_1_1_hotkey_entry}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classoverlay___g_u_i_1_1_hotkey_entry_afc30c39e20a906ade381d8da2ae5751d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, master=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classoverlay___g_u_i_1_1_hotkey_entry_a2874bc47bab3118d8fb393f9a460419f}{get\+\_\+hotkey}} (self)
+\item 
+\mbox{\hyperlink{classoverlay___g_u_i_1_1_hotkey_entry_a0e56ecdb477b518f03bfdca7a0e24621}{on\+\_\+focus\+\_\+in}} (self, event)
+\item 
+\mbox{\hyperlink{classoverlay___g_u_i_1_1_hotkey_entry_a1a2de62d5673bddffcadf43116cf0d93}{on\+\_\+focus\+\_\+out}} (self, event)
+\item 
+\mbox{\hyperlink{classoverlay___g_u_i_1_1_hotkey_entry_a4399238cca07e406857ba3eb4d49a5a2}{prevent\+\_\+default}} (self, event)
+\item 
+\mbox{\hyperlink{classoverlay___g_u_i_1_1_hotkey_entry_aba8c50e08dbf50f0bbb3ec8f2a201573}{check\+\_\+hotkeys}} (self, event)
+\item 
+\mbox{\hyperlink{classoverlay___g_u_i_1_1_hotkey_entry_a4e3d613a1d79ae31a2c34f4a8a187838}{capitalize\+\_\+key}} (self, key)
+\item 
+\mbox{\hyperlink{classoverlay___g_u_i_1_1_hotkey_entry_a945cec74de0cee8d1d1f06fcb8a6edda}{update\+\_\+display}} (self)
+\item 
+\mbox{\hyperlink{classoverlay___g_u_i_1_1_hotkey_entry_a2c3e6380d41d9f1198ec75d9857c8302}{finish\+\_\+recording}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a001e0b773299ce75006a34e8ae7a315b}\label{classoverlay___g_u_i_1_1_hotkey_entry_a001e0b773299ce75006a34e8ae7a315b} 
+{\bfseries keys\+\_\+pressed} = set()
+\item 
+\Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a4ca5405b2dfb069b9d71949039f81247}\label{classoverlay___g_u_i_1_1_hotkey_entry_a4ca5405b2dfb069b9d71949039f81247} 
+list {\bfseries key\+\_\+order} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a1c9a3467c2ed2cf8bcbcc3a7e96c1fa3}\label{classoverlay___g_u_i_1_1_hotkey_entry_a1c9a3467c2ed2cf8bcbcc3a7e96c1fa3} 
+bool {\bfseries is\+\_\+recording} = False
+\item 
+\Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a96dbdd967c78d6ca47e38ada4aeba2b8}\label{classoverlay___g_u_i_1_1_hotkey_entry_a96dbdd967c78d6ca47e38ada4aeba2b8} 
+str {\bfseries default\+\_\+text} = "{}Click to set hotkey"{}
+\item 
+\Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a928513f53ba8589673615cf26fabab91}\label{classoverlay___g_u_i_1_1_hotkey_entry_a928513f53ba8589673615cf26fabab91} 
+{\bfseries on\+\_\+focus\+\_\+in}
+\item 
+\Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a72108d5548ac8df91f6a9d8329f7c9b5}\label{classoverlay___g_u_i_1_1_hotkey_entry_a72108d5548ac8df91f6a9d8329f7c9b5} 
+{\bfseries on\+\_\+focus\+\_\+out}
+\item 
+\Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a9b8dda76e7943f29294edb4ff23d5d91}\label{classoverlay___g_u_i_1_1_hotkey_entry_a9b8dda76e7943f29294edb4ff23d5d91} 
+{\bfseries prevent\+\_\+default}
+\item 
+\Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_aa8615454dbbb67d434f472c027cae8f4}\label{classoverlay___g_u_i_1_1_hotkey_entry_aa8615454dbbb67d434f472c027cae8f4} 
+{\bfseries check\+\_\+hotkeys} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Logic for capturing key combinations.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_afc30c39e20a906ade381d8da2ae5751d}\index{overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classoverlay___g_u_i_1_1_hotkey_entry_afc30c39e20a906ade381d8da2ae5751d} 
+overlay\+\_\+\+GUI.\+Hotkey\+Entry.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{master}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize the HotkeyEntry widget.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a4e3d613a1d79ae31a2c34f4a8a187838}\index{overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}!capitalize\_key@{capitalize\_key}}
+\index{capitalize\_key@{capitalize\_key}!overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}}
+\doxysubsubsection{\texorpdfstring{capitalize\_key()}{capitalize\_key()}}
+{\footnotesize\ttfamily \label{classoverlay___g_u_i_1_1_hotkey_entry_a4e3d613a1d79ae31a2c34f4a8a187838} 
+overlay\+\_\+\+GUI.\+Hotkey\+Entry.\+capitalize\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Capitalize a key.\end{DoxyVerb}
+ \Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_aba8c50e08dbf50f0bbb3ec8f2a201573}\index{overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}!check\_hotkeys@{check\_hotkeys}}
+\index{check\_hotkeys@{check\_hotkeys}!overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}}
+\doxysubsubsection{\texorpdfstring{check\_hotkeys()}{check\_hotkeys()}}
+{\footnotesize\ttfamily \label{classoverlay___g_u_i_1_1_hotkey_entry_aba8c50e08dbf50f0bbb3ec8f2a201573} 
+overlay\+\_\+\+GUI.\+Hotkey\+Entry.\+check\+\_\+hotkeys (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{event}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process key events and update the key combination.\end{DoxyVerb}
+ \Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a2c3e6380d41d9f1198ec75d9857c8302}\index{overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}!finish\_recording@{finish\_recording}}
+\index{finish\_recording@{finish\_recording}!overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}}
+\doxysubsubsection{\texorpdfstring{finish\_recording()}{finish\_recording()}}
+{\footnotesize\ttfamily \label{classoverlay___g_u_i_1_1_hotkey_entry_a2c3e6380d41d9f1198ec75d9857c8302} 
+overlay\+\_\+\+GUI.\+Hotkey\+Entry.\+finish\+\_\+recording (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finish recording the key combination.\end{DoxyVerb}
+ \Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a2874bc47bab3118d8fb393f9a460419f}\index{overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}!get\_hotkey@{get\_hotkey}}
+\index{get\_hotkey@{get\_hotkey}!overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}}
+\doxysubsubsection{\texorpdfstring{get\_hotkey()}{get\_hotkey()}}
+{\footnotesize\ttfamily \label{classoverlay___g_u_i_1_1_hotkey_entry_a2874bc47bab3118d8fb393f9a460419f} 
+overlay\+\_\+\+GUI.\+Hotkey\+Entry.\+get\+\_\+hotkey (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the current key combination or an empty string.\end{DoxyVerb}
+ \Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a0e56ecdb477b518f03bfdca7a0e24621}\index{overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}!on\_focus\_in@{on\_focus\_in}}
+\index{on\_focus\_in@{on\_focus\_in}!overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}}
+\doxysubsubsection{\texorpdfstring{on\_focus\_in()}{on\_focus\_in()}}
+{\footnotesize\ttfamily \label{classoverlay___g_u_i_1_1_hotkey_entry_a0e56ecdb477b518f03bfdca7a0e24621} 
+overlay\+\_\+\+GUI.\+Hotkey\+Entry.\+on\+\_\+focus\+\_\+in (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{event}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Start recording hotkeys on focus.\end{DoxyVerb}
+ \Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a1a2de62d5673bddffcadf43116cf0d93}\index{overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}!on\_focus\_out@{on\_focus\_out}}
+\index{on\_focus\_out@{on\_focus\_out}!overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}}
+\doxysubsubsection{\texorpdfstring{on\_focus\_out()}{on\_focus\_out()}}
+{\footnotesize\ttfamily \label{classoverlay___g_u_i_1_1_hotkey_entry_a1a2de62d5673bddffcadf43116cf0d93} 
+overlay\+\_\+\+GUI.\+Hotkey\+Entry.\+on\+\_\+focus\+\_\+out (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{event}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Stop recording hotkeys on focus out.\end{DoxyVerb}
+ \Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a4399238cca07e406857ba3eb4d49a5a2}\index{overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}!prevent\_default@{prevent\_default}}
+\index{prevent\_default@{prevent\_default}!overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}}
+\doxysubsubsection{\texorpdfstring{prevent\_default()}{prevent\_default()}}
+{\footnotesize\ttfamily \label{classoverlay___g_u_i_1_1_hotkey_entry_a4399238cca07e406857ba3eb4d49a5a2} 
+overlay\+\_\+\+GUI.\+Hotkey\+Entry.\+prevent\+\_\+default (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{event}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prevent default key event processing.\end{DoxyVerb}
+ \Hypertarget{classoverlay___g_u_i_1_1_hotkey_entry_a945cec74de0cee8d1d1f06fcb8a6edda}\index{overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}!update\_display@{update\_display}}
+\index{update\_display@{update\_display}!overlay\_GUI.HotkeyEntry@{overlay\_GUI.HotkeyEntry}}
+\doxysubsubsection{\texorpdfstring{update\_display()}{update\_display()}}
+{\footnotesize\ttfamily \label{classoverlay___g_u_i_1_1_hotkey_entry_a945cec74de0cee8d1d1f06fcb8a6edda} 
+overlay\+\_\+\+GUI.\+Hotkey\+Entry.\+update\+\_\+display (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the Entry widget to display the current key combination.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+overlay\+\_\+\+GUI.\+py\end{DoxyCompactItemize}
